@@ -1,0 +1,11 @@
+{
+  "name": "lumen-notes",
+  "version": "0.1.0",
+  "description": "Local-first Markdown notebook with wikilinks, backlinks and a graph. Notes are plain .md files. No cloud, no telemetry, no dependencies.",
+  "license": "MIT",
+  "bin": { "lumen": "server.js" },
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" },
+  "files": ["server.js", "public", "README.md", "LICENSE"],
+  "keywords": ["notes", "markdown", "obsidian-alternative", "local-first", "wikilinks"]
+}

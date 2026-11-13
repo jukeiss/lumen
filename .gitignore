@@ -1,0 +1,7 @@
+vault/
+node_modules/
+.DS_Store
+*.tmp-*
+
+desktop/node_modules/
+desktop/dist/

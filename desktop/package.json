@@ -1,0 +1,34 @@
+{
+  "name": "lumen-desktop",
+  "productName": "Lumen",
+  "version": "0.1.0",
+  "description": "Lumen desktop app: a local-first notebook where notes are plain .md files.",
+  "main": "main.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --mac dmg"
+  },
+  "devDependencies": {
+    "electron": "^45.3.2",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.jukeiss.lumen",
+    "productName": "Lumen",
+    "files": [
+      "main.js",
+      "app/**/*",
+      "package.json"
+    ],
+    "mac": {
+      "target": [
+        "dmg"
+      ],
+      "category": "public.app-category.productivity"
+    },
+    "dmg": {
+      "title": "Lumen"
+    }
+  }
+}

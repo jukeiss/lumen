@@ -5,7 +5,7 @@ A macOS wrapper that runs Lumen in its own window. Notes are plain `.md` files i
 **Build it yourself** (from this folder):
 
 ```bash
-cp -R ../server.js ../public ./desktop/app/ 2>/dev/null; mkdir -p desktop/app && cp server.js desktop/app/ && cp -R public desktop/app/
+mkdir -p desktop/app && cp server.js desktop/app/ && cp -R public desktop/app/
 cd desktop && npm install && npx electron-builder --mac dmg
 ```
 
